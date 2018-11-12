@@ -22,6 +22,7 @@ export default {
               >
                 {{route.label}}
               </router-link>
+              <i v-if="delimiter" class="delimiter"></i>
             </li>
           </slot>
         </template>
@@ -40,6 +41,10 @@ export default {
     container: {
       type: String,
       default: 'ul'
+    },
+    delimiter: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
