@@ -1,7 +1,7 @@
 path = require('path')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/breadcrumbComponent.js',
   output: {
     library: 'Vue2Crumbs',
     libraryTarget: 'umd',
